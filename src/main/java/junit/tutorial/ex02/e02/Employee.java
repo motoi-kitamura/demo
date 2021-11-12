@@ -22,7 +22,7 @@ public class Employee {
 				emp.setFirstName(items[0]);
 				emp.setLastName(items[1]);
 				emp.setEmail(items[2]);
-				empList.add(emp);
+				empList.add(emp);	
 			}
 			return empList;
 		} catch (IOException e) {
