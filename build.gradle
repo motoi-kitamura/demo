@@ -13,9 +13,18 @@ repositories {
 }
 
 dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	runtimeOnly 'org.postgresql:postgresql'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.dbunit:dbunit:2.7.2'
+	implementation 'org.apache.poi:poi-ooxml:5.1.0'
+//	implementation 'com.atomikos:transactions-osgi:5.0.8'
+//	implementation 'org.apache.poi:poi:5.1.0'
+//	implementation 'org.apache.poi:poi-ooxml-schemas:4.1.2'
 }
 
 test {
